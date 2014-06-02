@@ -1,4 +1,4 @@
-<?php  namespace Raymonidema\NewsletterLists;
+<?php  namespace Raymondidema\NewsletterLists;
 
 interface NewsletterListInterface {
 

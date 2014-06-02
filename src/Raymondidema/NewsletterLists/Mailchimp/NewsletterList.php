@@ -1,4 +1,4 @@
-<?php namespace Raymonidema\NewsletterLists\Mailchimp;
+<?php namespace Raymondidema\NewsletterLists\Mailchimp;
 
 use Raymondidema\NewsletterLists\NewsletterListInterface;
 use Illuminate\Support\Facades\Config;
