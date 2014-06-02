@@ -37,12 +37,12 @@ class NewsletterList implements NewsletterListInterface {
     public function subscribeTo($listName, $email)
     {
         return $this->mailchimp->lists->subscribe(
-            $this->config->get('package::mailinglists.lists')[$listName], // listname
+            $this->config->get('newsletterlists::mailinglists.lists')[$listName], // listname
             ['email' => $email], // email
-            $this->config->get('package::mailinglists.subscribeTo.merge_vars'), // merge vars
-            $this->config->get('package::mailinglists.subscribeTo.email_type'), // email type
-            $this->config->get('package::mailinglists.subscribeTo.double_opt_in'), // Double opt in?
-            $this->config->get('package::mailinglists.subscribeTo.update_existing') // Update existing customers
+            $this->config->get('newsletterlists::mailinglists.subscribeTo.merge_vars'), // merge vars
+            $this->config->get('newsletterlists::mailinglists.subscribeTo.email_type'), // email type
+            $this->config->get('newsletterlists::mailinglists.subscribeTo.double_opt_in'), // Double opt in?
+            $this->config->get('newsletterlists::mailinglists.subscribeTo.update_existing') // Update existing customers
         );
     }
 
@@ -55,11 +55,11 @@ class NewsletterList implements NewsletterListInterface {
     public function unsubscribeFrom($listName, $email)
     {
         return $this->mailchimp->lists->unsubscribe(
-            $this->config->get('package::mailinglists.lists')[$listName], // listname
+            $this->config->get('newsletterlists::mailinglists.lists')[$listName], // listname
             ['email' => $email], // email
-            $this->config->get('package::mailinglists.unsubscribeFrom.remove_permanently'), // delete the member permanently?
-            $this->config->get('package::mailinglists.unsubscribeFrom.send_goodbye'), // send goodbye email?
-            $this->config->get('package::mailinglists.unsubscribeFrom.send_unsubscribe') // send unsubscribe email?
+            $this->config->get('newsletterlists::mailinglists.unsubscribeFrom.remove_permanently'), // delete the member permanently?
+            $this->config->get('newsletterlists::mailinglists.unsubscribeFrom.send_goodbye'), // send goodbye email?
+            $this->config->get('newsletterlists::mailinglists.unsubscribeFrom.send_unsubscribe') // send unsubscribe email?
         );
     }
 }
