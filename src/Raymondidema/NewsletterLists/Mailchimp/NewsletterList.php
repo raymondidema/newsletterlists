@@ -1,7 +1,7 @@
 <?php namespace Raymondidema\NewsletterLists\Mailchimp;
 
 use Raymondidema\NewsletterLists\NewsletterListInterface;
-use Illuminate\Support\Facades\Config;
+use Illuminate\Config\Repository as Config;
 use Mailchimp;
 
 class NewsletterList implements NewsletterListInterface {

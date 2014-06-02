@@ -5,6 +5,14 @@ use Illuminate\Support\ServiceProvider;
 class NewsletterListServiceProvider extends ServiceProvider {
 
     /**
+     * Boot
+     */
+    public function boot()
+    {
+        $this->package('raymondidema/newsletterlists');
+    }
+
+    /**
      * Register the service provider.
      *
      * @return void
