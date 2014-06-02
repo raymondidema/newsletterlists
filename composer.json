@@ -1,0 +1,24 @@
+{
+    "name": "raymondidema/newsletterlists",
+    "description": "Add / remove Mailinglists",
+    "authors": [
+        {
+            "name": "Raymond Idema",
+            "email": "raymond@design-code.nl"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.1.*",
+        "mailchimp/mailchimp": "2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Raymondidema\\NewslettersLists\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
