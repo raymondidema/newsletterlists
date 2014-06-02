@@ -11,7 +11,7 @@ class NewsletterListServiceProvider extends ServiceProvider {
      */
     public function register()
     {
-        $provider = Config::get('package::mailinglists.mailProvider');
+        $provider = \Config::get('package::mailinglists.mailProvider');
         $this->app->bind(
             'Raymondidema\\NewsletterLists\\NewsletterListInterface',
             'Raymondidema\\NewsletterLists\\'.$provider.'\\NewsletterList'

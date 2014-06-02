@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Raymondidema\\NewsletterLists\\": "src/"
+            "Raymondidema\\NewsletterLists": "src/"
         }
     },
     "minimum-stability": "stable"
